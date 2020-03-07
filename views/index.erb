@@ -1,0 +1,26 @@
+<html>
+  <head></head>
+  <body>
+    <p>
+        <%= "Caesar Cipher" %>
+    </p>
+    <p>
+      <form method="post" >
+        <input type="text" name="plaintext" placeholder="plaintext" />
+        <input type="text" name="shift" placeholder="shift" >
+        <input type="submit" value="Encode!" />
+      </form>
+    </p>
+    <p>
+      <%= "Ciphertext: #{ciphertext}" if ciphertext %>
+    </p>
+    <p>
+      <form method="post">
+        <input type="text" name="ciphertext" placeholder="ciphertext" />
+        <input type="text" name="shift" placeholder="shift" />
+        <input type="submit" value="Decode!" />
+        <span>work in progress</span>
+      </form>
+    </p>
+  </body>
+</html>
